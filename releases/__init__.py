@@ -1371,22 +1371,22 @@ class sort:
     default_language = "en"
     unwanted = ['sample']
     versions = [
-        ["1080p SDR",
+        ["4K",
          [
-            ["retries","<=","48"],
+            ["retries","<=","60"],
             ["media type","all",""],
          ],
          "true", 
          [
             ["cache status", "requirement", "cached", ""],
-            ["resolution", "requirement", "<=", "1080"],
+            ["resolution", "requirement", "<=", "2160"],
             ["resolution", "preference", "highest", ""],
-            ["title", "requirement", "exclude", "([^A-Z0-9]|HD|HQ)(CAM|T(ELE)?(S(YNC)?|C(INE)?)|ADS|HINDI)([^A-Z0-9]|RIP|$)"],
+            ["title", "requirement", "exclude", "([^A-Z0-9]|HD|HDTV|HQ)(CAM|T(ELE)?(S(YNC)?|C(INE)?)|ADS|HINDI)([^A-Z0-9]|RIP|$)"],
             ["title", "requirement", "exclude", "(3D)"],
             ["title", "requirement", "exclude", "(DO?VI?)"],
             ["title", "requirement", "exclude", "(HDR)"],
             ["title", "preference", "include", "(EXTENDED|REMASTERED|DIRECTORS|THEATRICAL|UNRATED|UNCUT|CRITERION|ANNIVERSARY|COLLECTORS|LIMITED|SPECIAL|DELUXE|SUPERBIT|RESTORED|REPACK)"],
-            ["size", "preference", "highest", ""],
+            ["size", "preference", "<=", "50"],
             ["seeders", "preference", "highest", ""],
             ["size", "requirement", ">=", "0.1"],
         ]],
