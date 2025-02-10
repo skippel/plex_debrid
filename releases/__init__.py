@@ -1116,7 +1116,7 @@ class sort:
                                 episode.offset_airtime[self.value] = datetime.datetime.strptime(episode.first_aired,'%Y-%m-%dT%H:%M:%S.000Z') + datetime.timedelta(hours=float(self.value))
                             elif hasattr(episode,"originallyAvailableAt"):
                                 episode.offset_airtime[self.value] = datetime.datetime.strptime(episode.originallyAvailableAt,'%Y-%m-%d') + datetime.timedelta(hours=float(self.value))
-                    return element.offset_airtime[self.value] < datetime.datetime.utcnow() 
+                    return element.offset_airtime[self.value] < datetime.datetime.utcnow() + datetime.timedelta(hours=12) 
                 except:
                     if element.type == "season":
                         return True
