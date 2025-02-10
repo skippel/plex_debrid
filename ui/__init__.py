@@ -354,7 +354,7 @@ def run(cdir = "", smode = False):
 
 def update_available():
     try:
-        response = requests.get('https://raw.githubusercontent.com/itsToggle/plex_debrid/main/ui/ui_settings.py',timeout=0.25)
+        response = requests.get('https://raw.githubusercontent.com/skippel/plex_debrid/main/ui/ui_settings.py',timeout=0.25)
         response = response.content.decode()
         if regex.search("(?<=')([0-9]+\.[0-9]+)(?=')",response):
             v = regex.search("(?<=')([0-9]+\.[0-9]+)(?=')",response).group()
