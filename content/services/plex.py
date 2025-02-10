@@ -328,7 +328,7 @@ class library(classes.library):
         name = 'Plex Libraries'
         sections = []
         partial = "true"
-        delay = "2"
+        delay = "45"
 
         def setup(cls, new=False):
             ui_cls("Options/Settings/Library Services/Library update services")
