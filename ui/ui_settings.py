@@ -2,4 +2,4 @@ version = ['3.01', "Settings compatible update", []]
 run_directly = "true"
 debug = "false"
 log = "false"
-loop_interval_seconds = 30
+loop_interval_seconds = 1800
